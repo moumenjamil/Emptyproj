@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Scoober_API" verbose="1" >
+    <listeners>
+        <listener class-name="Listener.listener" />
+    </listeners>
+    <test name="DriverMngt_regression_tests">
+        <classes>
+            <class name="Tests.DriverMngt.FixedShifts_TestCases"/>
+            <class name="Tests.DriverMngt.Availabilities_TestCases"/>
+            <class name="Tests.DriverMngt.Shifts_TestCases"/>
+            <class name="Tests.DriverMngt.OPenShifts_TestCases"/>
+            <class name="Tests.DriverMngt.Leaves_TestCases"/>
+            <class name="Tests.DriverMngt.Driver_TestCases"/>
+        </classes>
+    </test>
+</suite>
